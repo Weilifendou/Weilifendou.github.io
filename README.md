@@ -2,7 +2,7 @@
 2. git add . #添加所有文件到缓存区
 3. git commit -m '提交内容说明' #提交代码到本地仓库
 4. git push origin master #将本地仓库中的提交推送到名为 origin 的远程仓库的 master 分支中
-5. git push -u #是第一次推送时将本地库与远程库相关联，后续就可以直接使用git push不用加（origin master）
+5. git push -u origin master#是第一次推送时将本地库与远程库相关联，后续就可以直接使用git push不用加（origin master）
 6. git push -f #使用本地库强制覆盖远程库
 7. git clone #是第一次从远程仓库获取代码
 8. git pull #适用于从远程仓库更新本地仓库的代码，git pull 实际上是 git fetch 和 git merge 两个命令的组合，它首先从远程仓库拉取最新的更新，然后将这些更新与本地仓库合并
@@ -20,4 +20,5 @@
 20. git config --global  --list #检查一下用户名和邮箱是否配置
 21. git config --global  user.name "这里换上你的用户名"
 22. git config --global user.email "这里换上你的邮箱"
-23. ssh-keygen -t rsa -c "这是你的邮箱" 生成密钥
+23. ssh-keygen -t rsa -C "这是你的邮箱" 生成密钥
+24. git branch --set-upstream-to=origin/main dev #建立本地分支dev与远程分支对应关系
