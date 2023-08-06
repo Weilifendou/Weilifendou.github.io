@@ -19,10 +19,12 @@
         }
         
         .container {
+            width: 80%;
+            height: 80%;
             text-align: center;
             padding: 20px;
             background-color: #ffffff;
-            border-radius: 10px;
+            border-radius: 50px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         
@@ -31,9 +33,15 @@
             color: #333333;
             margin-bottom: 30px;
         }
-        
+        .function {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         .btn {
-            margin-bottom: 30px;
+            width: 20%;
+            margin-top: 50px;
             display: inline-block;
             padding: 15px 30px;
             font-size: 20px;
@@ -58,9 +66,16 @@
 <body>
     <div class="container">
         <h1>为理奋斗 </h1>
-        <button class="btn">FOR BETTER LIFE</button>
+        <h2>FOR BETTER LIFE</h2>
+        <div class="function">
+            <a href="./qqmusic/qqmusic.html" class="btn">QQ Music Transform</a>
+            <a href="./circle_clock/circle_clock.html" class="btn">Circle Clock </a>
+            <a href="./simple_clock/simple_clock.html" class="btn">Simple Clock </a>
+            <a href="./fireworks/fireworks.html" class="btn">Fireworks </a>
+            
         <br>
-        <a href="./qqmusic.html" class="btn">QQ Music Transform</a>
+
+        </div>
     </div>
 </body>
 </html>
